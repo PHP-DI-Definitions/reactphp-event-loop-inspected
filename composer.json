@@ -1,0 +1,27 @@
+{
+    "name": "php-di-definitions/react-event-loop-inspected",
+    "require": {
+        "php": "^7.1",
+        "react/event-loop": "^1.0 || ^0.5",
+        "wyrihaximus/react-inspector": "dev-master",
+        "wyrihaximus/react-inspector-bunny": "dev-master",
+        "wyrihaximus/react-inspector-event-loop": "dev-master",
+        "wyrihaximus/react-inspector-stream": "dev-master"
+    },
+    "require-dev": {
+        "api-clients/test-utilities": "^4.3"
+    },
+    "extra": {
+        "php-di-definitions": {
+            "di": [
+                "src/event-loop.php"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.1"
+        }
+    }
+}
