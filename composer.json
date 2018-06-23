@@ -1,7 +1,7 @@
 {
     "name": "php-di-definitions/react-event-loop-inspected",
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "react/event-loop": "^1.0 || ^0.5",
         "wyrihaximus/react-inspector": "dev-master",
         "wyrihaximus/react-inspector-bunny": "dev-master",
@@ -21,7 +21,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.1"
+            "php": "7.2"
         }
     }
 }
