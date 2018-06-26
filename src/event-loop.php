@@ -9,7 +9,4 @@ return [
     LoopInterface::class => function () {
         return new LoopDecorator(Factory::create());
     },
-    InfoProvider::class => function (LoopInterface $loop) {
-        return new InfoProvider($loop);
-    },
 ];
