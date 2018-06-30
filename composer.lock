@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d00cf82ddd8ee28fe5e10c43bcf5d31c",
+    "content-hash": "63aabe5ed67aea145dfb2d2728f6a9c0",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -142,6 +142,48 @@
                 "package"
             ],
             "time": "2015-07-16T22:30:20+00:00"
+        },
+        {
+            "name": "react/child-process",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/child-process.git",
+                "reference": "aae49d7f1340bafb695b9af3ce4421ea41a39620"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/aae49d7f1340bafb695b9af3ce4421ea41a39620",
+                "reference": "aae49d7f1340bafb695b9af3ce4421ea41a39620",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
+                "react/stream": "^1.0 || ^0.7.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "sebastian/environment": "^3.0 || ^2.0 || ^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\ChildProcess\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event-driven library for executing child processes with ReactPHP.",
+            "keywords": [
+                "event-driven",
+                "process",
+                "reactphp"
+            ],
+            "time": "2018-01-18T14:53:06+00:00"
         },
         {
             "name": "react/event-loop",
@@ -384,6 +426,55 @@
             "time": "2018-06-19T20:43:13+00:00"
         },
         {
+            "name": "wyrihaximus/react-child-process-promise",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/reactphp-child-process-promise.git",
+                "reference": "9b6f1bace7af43afc79fa85b91c793cdb3ff199b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-child-process-promise/zipball/9b6f1bace7af43afc79fa85b91c793cdb3ff199b",
+                "reference": "9b6f1bace7af43afc79fa85b91c793cdb3ff199b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4||^7.0",
+                "react/child-process": "^0.5 || ^0.4",
+                "react/promise": "^2.2",
+                "wyrihaximus/ticking-promise": "^1.5.2"
+            },
+            "require-dev": {
+                "phake/phake": "^2.1",
+                "phpunit/phpunit": "^4.4||^5.0",
+                "squizlabs/php_codesniffer": "^1.5.6",
+                "vectorface/dunit": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com",
+                    "homepage": "http://wyrihaximus.net/"
+                }
+            ],
+            "description": "Wrapping ticks into a promise",
+            "time": "2017-10-17T11:37:15+00:00"
+        },
+        {
             "name": "wyrihaximus/react-inspector",
             "version": "dev-master",
             "source": {
@@ -491,6 +582,64 @@
             "time": "2018-04-29T19:50:49+00:00"
         },
         {
+            "name": "wyrihaximus/react-inspector-cpu-usage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/reactphp-inspector-cpu-usage.git",
+                "reference": "45f0517226147729e28f7c658c0b08dee959d4b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-inspector-cpu-usage/zipball/45f0517226147729e28f7c658c0b08dee959d4b5",
+                "reference": "45f0517226147729e28f7c658c0b08dee959d4b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "react/event-loop": "^1.0 || ^0.5",
+                "wyrihaximus/react-child-process-promise": "^2.0",
+                "wyrihaximus/react-inspector": "dev-master"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "react-inspector": {
+                    "collectors": {
+                        "WyriHaximus\\React\\Inspector\\CPUUsage": "src"
+                    },
+                    "metrics": [
+                        "cpu.usage"
+                    ],
+                    "reset": {
+                        "totals": [
+                            "cpu.usage"
+                        ]
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\Inspector\\CPUUsage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com",
+                    "homepage": "https://www.wyrihaximus.net/"
+                }
+            ],
+            "description": "CPU usage collector for wyrihaximus/react-inspector",
+            "time": "2018-06-29T21:28:02+00:00"
+        },
+        {
             "name": "wyrihaximus/react-inspector-event-loop",
             "version": "dev-master",
             "source": {
@@ -585,6 +734,62 @@
             ],
             "description": "Inspect react/event-loop package for metrics",
             "time": "2018-06-26T05:48:24+00:00"
+        },
+        {
+            "name": "wyrihaximus/react-inspector-memory-usage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/reactphp-inspector-memory-usage.git",
+                "reference": "417e875d1df557f754d6e923398218f0dae780e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-inspector-memory-usage/zipball/417e875d1df557f754d6e923398218f0dae780e0",
+                "reference": "417e875d1df557f754d6e923398218f0dae780e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "wyrihaximus/react-inspector": "dev-master"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "react-inspector": {
+                    "collectors": {
+                        "WyriHaximus\\React\\Inspector\\MemoryUsage": "src"
+                    },
+                    "metrics": [
+                        "cpu.usage"
+                    ],
+                    "reset": {
+                        "totals": [
+                            "cpu.usage"
+                        ]
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\Inspector\\MemoryUsage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com",
+                    "homepage": "https://www.wyrihaximus.net/"
+                }
+            ],
+            "description": "Message the memory usage of the current PHP process",
+            "time": "2018-06-29T20:57:48+00:00"
         },
         {
             "name": "wyrihaximus/react-inspector-stream",
@@ -4304,7 +4509,9 @@
     "stability-flags": {
         "wyrihaximus/react-inspector": 20,
         "wyrihaximus/react-inspector-bunny": 20,
+        "wyrihaximus/react-inspector-cpu-usage": 20,
         "wyrihaximus/react-inspector-event-loop": 20,
+        "wyrihaximus/react-inspector-memory-usage": 20,
         "wyrihaximus/react-inspector-stream": 20
     },
     "prefer-stable": false,
