@@ -16,7 +16,7 @@
     "extra": {
         "php-di-definitions": {
             "di": [
-                "src/event-loop.php"
+                "etc/di/event-loop.php"
             ]
         }
     },
