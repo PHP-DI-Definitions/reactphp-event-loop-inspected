@@ -11,7 +11,7 @@
         "wyrihaximus/react-inspector-stream": "dev-master"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^4.3"
+        "api-clients/test-utilities": "^5.0"
     },
     "extra": {
         "php-di-definitions": {
