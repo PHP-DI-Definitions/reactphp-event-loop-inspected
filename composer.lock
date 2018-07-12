@@ -280,16 +280,16 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.5.2",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "e94985d93c689c554265b01014f8c3064921ca27"
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/e94985d93c689c554265b01014f8c3064921ca27",
-                "reference": "e94985d93c689c554265b01014f8c3064921ca27",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-04-24T11:23:06+00:00"
+            "time": "2018-07-11T14:37:46+00:00"
         },
         {
             "name": "react/promise",
