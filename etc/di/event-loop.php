@@ -1,12 +1,6 @@
 <?php
 
-use React\EventLoop\Factory;
-use React\EventLoop\LoopInterface;
-use WyriHaximus\React\Inspector\EventLoop\InfoProvider;
+use function EventLoop\setLoop;use React\EventLoop\Factory;
 use WyriHaximus\React\Inspector\EventLoop\LoopDecorator;
 
-return [
-    LoopInterface::class => function () {
-        return new LoopDecorator(Factory::create());
-    },
-];
+setLoop(new LoopDecorator(Factory::create()));

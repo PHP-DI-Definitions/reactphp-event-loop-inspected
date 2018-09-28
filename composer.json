@@ -3,6 +3,7 @@
     "require": {
         "php": "^7.2",
         "react/event-loop": "^1.0 || ^0.5",
+        "voryx/event-loop": "^3.0 || ^2.0.2",
         "wyrihaximus/react-inspector": "dev-master",
         "wyrihaximus/react-inspector-bunny": "dev-master",
         "wyrihaximus/react-inspector-cpu-usage": "dev-master",
@@ -12,6 +13,9 @@
     },
     "require-dev": {
         "api-clients/test-utilities": "^4.3"
+    },
+    "autoload": {
+        "files": ["etc/bootstrap.php"]
     },
     "extra": {
         "php-di-definitions": {
