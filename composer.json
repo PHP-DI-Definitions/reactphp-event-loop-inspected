@@ -12,7 +12,7 @@
         "wyrihaximus/react-inspector-stream": "dev-master"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^5.0"
+        "api-clients/test-utilities": "^5.1"
     },
     "autoload": {
         "files": ["etc/bootstrap.php"]
