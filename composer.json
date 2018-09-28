@@ -11,9 +11,6 @@
         "wyrihaximus/react-inspector-memory-usage": "dev-master",
         "wyrihaximus/react-inspector-stream": "dev-master"
     },
-    "require-dev": {
-        "api-clients/test-utilities": "^5.1"
-    },
     "autoload": {
         "files": ["etc/bootstrap.php"]
     },
