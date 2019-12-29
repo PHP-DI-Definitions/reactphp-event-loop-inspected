@@ -1,17 +1,18 @@
 {
     "name": "php-di-definitions/react-event-loop-inspected",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "description": "PHP-DI definition for the Inspected ReactPHP event loop",
     "require": {
-        "php": "^7.2",
-        "react/event-loop": "^1.0 || ^0.5",
-        "voryx/event-loop": "^3.0 || ^2.0.2",
-        "wyrihaximus/react-inspector": "dev-master",
-        "wyrihaximus/react-inspector-bunny": "dev-master",
-        "wyrihaximus/react-inspector-cpu-usage": "dev-master",
-        "wyrihaximus/react-inspector-event-loop": "dev-master",
-        "wyrihaximus/react-inspector-memory-usage": "dev-master",
-        "wyrihaximus/react-inspector-stream": "dev-master"
+        "php": "^7.3",
+        "react-inspector/event-loop": "dev-master",
+        "react-inspector/memory-usage": "dev-master",
+        "react-inspector/metric": "dev-master",
+        "react-inspector/metrics": "dev-master",
+        "react-inspector/stream": "dev-master",
+        "react/event-loop": "^1.1",
+        "voryx/event-loop": "^3.0"
     },
     "require-dev": {
         "api-clients/test-utilities": "^5.1"
@@ -29,7 +30,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.2"
+            "php": "7.3"
         }
     },
     "scripts": {
