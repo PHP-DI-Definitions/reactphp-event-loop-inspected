@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97a597cf3cd2765610799f4e2ea4c554",
+    "content-hash": "e0f3a53810b5240d2b9ff78cd6f8fcc1",
     "packages": [
         {
             "name": "api-clients/rx",
@@ -336,6 +336,47 @@
                 }
             ],
             "time": "2017-07-14T14:27:02+00:00"
+        },
+        {
+            "name": "react-inspector/bunny",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp-inspector/bunny.git",
+                "reference": "9ddea87ff29f0b1c5f32069bcf203bf101679602"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp-inspector/bunny/zipball/9ddea87ff29f0b1c5f32069bcf203bf101679602",
+                "reference": "9ddea87ff29f0b1c5f32069bcf203bf101679602",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "react-inspector/metric": "dev-master",
+                "react-inspector/stream": "dev-master"
+            },
+            "require-dev": {
+                "wyrihaximus/async-test-utilities": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "🐇 Bunny bindings",
+            "time": "2019-12-29T11:14:19+00:00"
         },
         {
             "name": "react-inspector/event-loop",
@@ -7291,6 +7332,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "react-inspector/bunny": 20,
         "react-inspector/event-loop": 20,
         "react-inspector/memory-usage": 20,
         "react-inspector/metric": 20,

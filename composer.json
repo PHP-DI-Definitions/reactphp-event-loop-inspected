@@ -6,6 +6,7 @@
     "description": "PHP-DI definition for the Inspected ReactPHP event loop",
     "require": {
         "php": "^7.3",
+        "react-inspector/bunny": "dev-master",
         "react-inspector/event-loop": "dev-master",
         "react-inspector/memory-usage": "dev-master",
         "react-inspector/metric": "dev-master",
