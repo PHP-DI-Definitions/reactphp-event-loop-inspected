@@ -17,7 +17,7 @@ final class AdditionalCollectors implements CollectorInterface
 
     public function collect(): Observable
     {
-        return observableFromArray($this->collectors)->map(function (CollectorInterface $collector) {
+        return observableFromArray($this->collectors)->flatMap(function (CollectorInterface $collector) {
             return $collector->collect();
         });
     }
