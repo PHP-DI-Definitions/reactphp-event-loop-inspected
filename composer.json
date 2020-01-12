@@ -19,6 +19,9 @@
         "api-clients/test-utilities": "^5.1"
     },
     "autoload": {
+        "psr-4": {
+          "PHPDIDefinitions\\ReactInspector\\": "src/"
+        },
         "files": ["etc/bootstrap.php"]
     },
     "extra": {

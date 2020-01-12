@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 
+use PHPDIDefinitions\ReactInspector\AdditionalCollectors;
 use function EventLoop\getLoop;
 use React\EventLoop\LoopInterface;
 use ReactInspector\EventLoop\LoopCollector;
@@ -19,7 +20,7 @@ return [
             new LoopCollector($loop),
             new MemoryUsageCollector($loop),
             new IOCollector(),
-            ...$additionalCollectors->get()
+            $additionalCollectors
         );
     },
 ];

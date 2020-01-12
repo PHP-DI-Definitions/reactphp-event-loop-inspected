@@ -384,12 +384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp-inspector/event-loop.git",
-                "reference": "51c6eba564bb59028bcc15a6fb16a5cd047dcb7f"
+                "reference": "3a856fa6459a4e25aba630f474474958a3da5317"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp-inspector/event-loop/zipball/51c6eba564bb59028bcc15a6fb16a5cd047dcb7f",
-                "reference": "51c6eba564bb59028bcc15a6fb16a5cd047dcb7f",
+                "url": "https://api.github.com/repos/reactphp-inspector/event-loop/zipball/3a856fa6459a4e25aba630f474474958a3da5317",
+                "reference": "3a856fa6459a4e25aba630f474474958a3da5317",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 }
             ],
             "description": "🌀 Measure the Event Loop",
-            "time": "2019-12-29T10:11:44+00:00"
+            "time": "2020-01-06T19:48:27+00:00"
         },
         {
             "name": "react-inspector/memory-usage",
@@ -431,12 +431,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp-inspector/memory-usage.git",
-                "reference": "9fae211b381d26a071c378a4630bb623378bf448"
+                "reference": "67eb69cfff94ed481a30d1c9bf89ce40c6a1cc72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp-inspector/memory-usage/zipball/9fae211b381d26a071c378a4630bb623378bf448",
-                "reference": "9fae211b381d26a071c378a4630bb623378bf448",
+                "url": "https://api.github.com/repos/reactphp-inspector/memory-usage/zipball/67eb69cfff94ed481a30d1c9bf89ce40c6a1cc72",
+                "reference": "67eb69cfff94ed481a30d1c9bf89ce40c6a1cc72",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +472,7 @@
                 }
             ],
             "description": "📶 Measure the memory usage of the current PHP process",
-            "time": "2020-01-06T15:53:15+00:00"
+            "time": "2020-01-06T19:37:28+00:00"
         },
         {
             "name": "react-inspector/metric",
@@ -480,12 +480,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp-inspector/metric.git",
-                "reference": "d6d34ed5ed8e8e6fd5b9a57da88674b01e7cfe12"
+                "reference": "3d06d1dd46ea2c3dccea29bb4ac4ef6946d39b3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp-inspector/metric/zipball/d6d34ed5ed8e8e6fd5b9a57da88674b01e7cfe12",
-                "reference": "d6d34ed5ed8e8e6fd5b9a57da88674b01e7cfe12",
+                "url": "https://api.github.com/repos/reactphp-inspector/metric/zipball/3d06d1dd46ea2c3dccea29bb4ac4ef6946d39b3f",
+                "reference": "3d06d1dd46ea2c3dccea29bb4ac4ef6946d39b3f",
                 "shasum": ""
             },
             "require": {
@@ -533,7 +533,7 @@
                 }
             ],
             "description": "📐 Metric VO's",
-            "time": "2019-12-12T20:59:01+00:00"
+            "time": "2020-01-06T19:05:12+00:00"
         },
         {
             "name": "react-inspector/metrics",
@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp-inspector/stream.git",
-                "reference": "5a4f2a76853b3ac4c2212dfdc039556ffb286446"
+                "reference": "d2f1aa1de6c750f8da8313e5f9a7c6628ece6898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp-inspector/stream/zipball/5a4f2a76853b3ac4c2212dfdc039556ffb286446",
-                "reference": "5a4f2a76853b3ac4c2212dfdc039556ffb286446",
+                "url": "https://api.github.com/repos/reactphp-inspector/stream/zipball/d2f1aa1de6c750f8da8313e5f9a7c6628ece6898",
+                "reference": "d2f1aa1de6c750f8da8313e5f9a7c6628ece6898",
                 "shasum": ""
             },
             "require": {
@@ -647,7 +647,7 @@
                 }
             ],
             "description": "🌊 React Stream throughput inspector",
-            "time": "2020-01-05T19:07:44+00:00"
+            "time": "2020-01-06T20:05:15+00:00"
         },
         {
             "name": "react/event-loop",
@@ -3558,31 +3558,30 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "337117df1dade22e2ba1fdc4a4b832c1e9b06b76"
+                "reference": "febf71fb4052c824046f5a33f4f769a6e7fa0cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/337117df1dade22e2ba1fdc4a4b832c1e9b06b76",
-                "reference": "337117df1dade22e2ba1fdc4a4b832c1e9b06b76",
+                "url": "https://api.github.com/repos/nette/schema/zipball/febf71fb4052c824046f5a33f4f769a6e7fa0cb4",
+                "reference": "febf71fb4052c824046f5a33f4f769a6e7fa0cb4",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.0.1",
+                "nette/utils": "^3.1",
                 "php": ">=7.1"
             },
             "require-dev": {
                 "nette/tester": "^2.2",
+                "phpstan/phpstan-nette": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
+                "branch-alias": []
             },
             "autoload": {
                 "classmap": [
@@ -3611,7 +3610,7 @@
                 "config",
                 "nette"
             ],
-            "time": "2019-10-31T20:52:19+00:00"
+            "time": "2020-01-06T22:52:48+00:00"
         },
         {
             "name": "nette/utils",
@@ -4757,16 +4756,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2"
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
+                "reference": "018b6ac3c8ab20916db85fa91bf6465acb64d1e0",
                 "shasum": ""
             },
             "require": {
@@ -4836,7 +4835,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-25T14:49:39+00:00"
+            "time": "2020-01-08T08:49:49+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -6939,16 +6938,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "8e54e3aa060fc490d86d0e2abbf62750516d40fd"
+                "reference": "90d6b73fd8062432030ef39b7b6694b3902daa31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/8e54e3aa060fc490d86d0e2abbf62750516d40fd",
-                "reference": "8e54e3aa060fc490d86d0e2abbf62750516d40fd",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/90d6b73fd8062432030ef39b7b6694b3902daa31",
+                "reference": "90d6b73fd8062432030ef39b7b6694b3902daa31",
                 "shasum": ""
             },
             "require": {
@@ -6956,6 +6955,10 @@
                 "amphp/byte-stream": "^1.5",
                 "composer/xdebug-handler": "^1.1",
                 "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
                 "felixfbecker/advanced-json-rpc": "^3.0.3",
                 "felixfbecker/language-server-protocol": "^1.4",
                 "netresearch/jsonmapper": "^1.0",
@@ -7026,7 +7029,7 @@
                 "inspection",
                 "php"
             ],
-            "time": "2019-12-29T16:11:07+00:00"
+            "time": "2020-01-07T13:50:31+00:00"
         },
         {
             "name": "webmozart/glob",

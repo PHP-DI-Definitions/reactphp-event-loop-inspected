@@ -1,8 +1,12 @@
 <?php
 
-use ReactInspector\CollectorInterface;
+namespace PHPDIDefinitions\ReactInspector;
 
-final class AdditionalCollectors
+use ReactInspector\CollectorInterface;
+use Rx\Observable;
+use function ApiClients\Tools\Rx\observableFromArray;
+
+final class AdditionalCollectors implements CollectorInterface
 {
     private $collectors = [];
 
@@ -11,9 +15,16 @@ final class AdditionalCollectors
         $this->collectors[] = $collector;
     }
 
-    public function get(): array
+    public function collect(): Observable
     {
-        return $this->collectors;
+        return observableFromArray($this->collectors)->map(function (CollectorInterface $collector) {
+            return $collector->collect();
+        });
+    }
+
+    public function cancel(): void
+    {
+        // void
     }
 }
 
