@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace PHPDIDefinitions\ReactInspector;
 
@@ -8,7 +8,8 @@ use function ApiClients\Tools\Rx\observableFromArray;
 
 final class AdditionalCollectors implements CollectorInterface
 {
-    private $collectors = [];
+    /** @var array<CollectorInterface>  */
+    private array $collectors = [];
 
     public function add(CollectorInterface $collector): void
     {
@@ -17,7 +18,7 @@ final class AdditionalCollectors implements CollectorInterface
 
     public function collect(): Observable
     {
-        return observableFromArray($this->collectors)->flatMap(function (CollectorInterface $collector) {
+        return observableFromArray($this->collectors)->flatMap(static function (CollectorInterface $collector): Observable {
             return $collector->collect();
         });
     }
@@ -27,4 +28,3 @@ final class AdditionalCollectors implements CollectorInterface
         // void
     }
 }
-
