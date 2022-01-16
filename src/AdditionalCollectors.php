@@ -1,9 +1,12 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace PHPDIDefinitions\ReactInspector;
 
 use ReactInspector\CollectorInterface;
 use Rx\Observable;
+
 use function ApiClients\Tools\Rx\observableFromArray;
 
 final class AdditionalCollectors implements CollectorInterface

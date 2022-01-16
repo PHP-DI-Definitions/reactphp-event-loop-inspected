@@ -1,10 +1,14 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace PHPDIDefinitions\Tests\ReactInspector;
 
 use React\EventLoop\LoopInterface;
 use WyriHaximus\TestUtilities\TestCase;
+
 use function dirname;
+
 use const DIRECTORY_SEPARATOR;
 
 /**

@@ -3,7 +3,7 @@
     "description": "PHP-DI definition for the Inspected ReactPHP event loop",
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^8 || ^7.4",
         "react-inspector/event-loop": "^1.0",
         "react-inspector/memory-usage": "^1.0",
         "react-inspector/metric": "^1.0",
@@ -15,19 +15,8 @@
     "require-dev": {
         "wyrihaximus/test-utilities": "^2.2"
     },
-    "config": {
-        "platform": {
-            "php": "7.4"
-        },
-        "sort-packages": true
-    },
-    "extra": {
-        "php-di-definitions": {
-            "di": [
-                "etc/di/event-loop.php"
-            ]
-        }
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "PHPDIDefinitions\\ReactInspector\\": "src/"
@@ -41,8 +30,26 @@
             "PHPDIDefinitions\\Tests\\ReactInspector\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "infection/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "icanhazstring/composer-unused": true,
+            "ergebnis/composer-normalize": true
+        },
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "php-di-definitions": {
+            "di": [
+                "etc/di/event-loop.php"
+            ]
+        }
+    },
     "scripts": {
         "post-install-cmd": [
             "composer normalize"
